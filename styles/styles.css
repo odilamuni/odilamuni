@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body, .wrapper{
+    background: rgba(23, 155, 155, 0.6);
+    height: 100vh;
+    margin:0px;
+    padding:0;
+    color: #3e4242;
+    font-size: 1.25rem;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+header{
+   
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+#navbar{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+   
+}
+.brand-container{
+    flex:1;
+}
+
+.name{
+    display: none;
+}
+.logo{
+    width: 150px;
+    
+}
+
+  
+
+
+#menu{
+    flex: 1;
+    margin-left: 20%;
+   padding: 2%;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+   
+}
+#menu a{
+    text-decoration: none;
+    color: #3e4242;
+    padding: 1%;
+}
+/*ROM logo styling hover efect animated border bottom */
+#menu a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+  
+  #menu a:hover::after  {
+        width: 100%;
+        color: #fff;
+ }
+ #menu a:hover{
+  color: #fff;
+ }
+
+.hidden{
+    visibility: hidden;
+}
+main{
+    height: 90%;
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+main h1{
+    flex:1;
+    
+}
+.work-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex:2;
+    
+}
+article{
+    padding: 2% 5% 2% 5%;
+    width: 30vw;
+    text-align: center;
+}
+article img{
+    max-height: 20vw;
+   
+}
+#des-and-illo::after{
+    content: "design and illustration";
+    visibility: collapse;
+    display: block;
+}
+
+#des-and-illo:hover::after{
+    visibility: visible;
+    color: #fff;
+    transition: width .3s;
+}
+#web-dev::before{
+    content: "web design";
+    visibility: collapse;
+    display: block;
+}
+
+#web-dev:hover::before{
+    visibility: visible;
+    color: #fff;
+    transition: width .3s;
+}
+footer{
+    font-size: 0.75rem;
+    text-align: right;
+    padding: 1%;
+}
