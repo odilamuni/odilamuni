@@ -21,7 +21,7 @@ header{
     position: fixed;
     top: 0px;
 }
-#navbar{
+.navbar{
    
     width: 100%;
     display: flex;
@@ -45,24 +45,24 @@ header{
   
 
 
-#menu{
+.menu{
     flex: 1;
     margin-left: 20%;
    padding: 2%;
 }
-#menu{
+.menu{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
    
 }
-#menu a{
+.menu a{
     text-decoration: none;
     color: #3e4242;
     padding: 1%;
 }
 /*ROM logo styling hover efect animated border bottom */
-#menu a::after{
+.menu a::after{
     content: '';
     display: block;
     width: 0;
@@ -71,13 +71,17 @@ header{
     transition: width .3s;
 }
   
-  #menu a:hover::after  {
+.menu a:hover::after  {
         width: 100%;
         color: #fff;
  }
- #menu a:hover{
+.menu a:hover{
   color: #fff;
  }
+.menu a.active{
+    font-weight: 600;
+    color: #fff;
+}
 
 .hidden{
     visibility: hidden;
