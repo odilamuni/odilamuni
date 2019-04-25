@@ -137,6 +137,12 @@ article img{
     color: #fff;
     transition: width .3s;
 }
+.content{
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+    line-height: 1.5;
+}
 footer{
     font-size: 0.75rem;
     text-align: right;
