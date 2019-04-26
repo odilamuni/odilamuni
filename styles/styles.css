@@ -43,7 +43,9 @@ header{
     width: 150px;
     
 }
-
+.tagline{
+    padding-bottom: 2%;
+}
 .menu{
     flex: 1;
     margin-left: 20%;
@@ -179,6 +181,7 @@ footer{
     text-decoration: none;
     color: #3e4242;
     color: #000;
+    padding-bottom: 2%;
 }
 
 #item-1-wd{
@@ -196,4 +199,10 @@ footer{
 }
 .nav-colored{
     background:blue;
+}
+#email {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
 }
