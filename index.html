@@ -9,7 +9,20 @@
 	<meta name="author" content="Odila Muni">
 	<meta name="description" content="Select design and illustration work">
     <meta name="robots" content="all">
-    <script type="text/javascript" src="scripts\scripts.js"></script>
+    <script type="text/javascript" src="scripts\scripts.js">
+    var myNav = document.getElementById('navbar');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
+    </script>
    
 
 </head>

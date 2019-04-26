@@ -9,7 +9,20 @@
         <meta name="author" content="Odila Muni">
         <meta name="description" content="Select design and illustration work">
         <meta name="robots" content="all">
-        <script type="text/javascript" src="scripts\scripts.js"></script>
+        <script type="text/javascript" src="scripts\scripts.js">
+            var myNav = document.getElementById('navbar');
+        window.onscroll = function () { 
+            "use strict";
+            if (document.body.scrollTop >= 200 ) {
+                myNav.classList.add("nav-colored");
+                myNav.classList.remove("nav-transparent");
+            } 
+            else {
+                myNav.classList.add("nav-transparent");
+                myNav.classList.remove("nav-colored");
+            }
+        };
+            </script>
    
 
 </head>
@@ -36,6 +49,28 @@
                 <main  class="content">
                    
                         <h1>supergraphilisticartedesignocious</h1>
+                        <div class="portfolio">
+                              
+                                <div id="item-2-wd" class="portfolio-item">
+                                    <a href="https://odilamuni.github.io/rainy-picky-sorcerer/" target="blank">
+                                    <img src="images\rock-paper-scissors.png"/>
+                                    <p>Machine-based Rock/Paper/Scissors</p>
+                                    </a>
+                                </div>
+                                <div id="item-3-wd" class="portfolio-item">
+                                    <a href="https://odilamuni.github.io/timeformat/" target="blank">
+                                    <img src="images\time-format.png"/>
+                                    <p>12 hr to 24 hr time converter</p>
+                                    </a>
+                                </div>
+                                <div id="item-1-wd" class="portfolio-item">
+                                        <a href="https://paperplanetranslations.com/" target="blank">
+                                           <img src="images\Screenshot (70).png"/>
+                                           <img src="images\Screenshot (72).png"/>
+                                           <p>single-page website built on WordPress</p>
+                                       </a>
+                                       </div>
+                        </div>
                     
                         
                     
