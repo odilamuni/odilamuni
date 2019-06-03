@@ -20,6 +20,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     
 }
+
 .wrapper{
     height: 100%;
 }
@@ -174,7 +175,12 @@ article img{
     max-height: 20vw;
    
 }
-#des-and-illo::after{
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+/* #des-and-illo::after{
     content: "design and illustration";
     visibility: collapse;
     display: block;
@@ -199,7 +205,7 @@ article img{
     font-size: 2rem;
     font-weight: 500;
     transition: width .3s;
-}
+} */
 
 footer{
     
